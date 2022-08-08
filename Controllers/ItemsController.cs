@@ -4,10 +4,10 @@ using Microsoft.AspNetCore.Mvc;
 using ToDoList.Models;
 using System.Collections.Generic;
 using System.Linq;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Identity;
-using System.Threading.Tasks;
-using System.Security.Claims;
+using Microsoft.AspNetCore.Authorization; // will allow us to authorize users.
+using Microsoft.AspNetCore.Identity; // so our controller can interact with users from the database
+using System.Threading.Tasks; //necessary to call async methods.
+using System.Security.Claims; //lets us use ClaimTypes.NameIdentifier
 
 namespace ToDoList.Controllers
 {

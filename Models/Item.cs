@@ -12,7 +12,7 @@ namespace ToDoList.Models
         public int ItemId { get; set; }
         public string Description { get; set; }
 
-        public virtual ApplicationUser User { get; set; }
+        public virtual ApplicationUser User { get; set; } // The User property is declared virtual to allow Entity to lazy load its contents
 
         public virtual ICollection<CategoryItem> JoinEntities { get;}
     }
